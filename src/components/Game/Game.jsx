@@ -15,10 +15,11 @@ const Game = () => {
 		Setplayer(player === "X" ? "O" : "X");
 		cellPlayed[cell] = player;
 		SetCellPlayed([...cellPlayed]);
-		SetHistory([...history, player, cell]);
+		SetHistory([...history, [player, cell]]);
+		winner(history);
 	};
 
-	const winner = () => {
+	const winner = (historicArray) => {
 		const winnerTemplate = [
 			[0, 1, 2],
 			[3, 4, 5],
@@ -29,6 +30,18 @@ const Game = () => {
 			[0, 4, 8],
 			[2, 4, 6],
 		];
+
+		const testX = historicArray.filter((a, b) => a.includes("X"));
+		const testO = historicArray.filter((a, b) => a.includes("O"));
+		console.log("testX", testX);
+		// console.log("testO", testO);
+
+		for (let i = 0; i < winnerTemplate.length; i++) {
+			for (let j = 0; j < 3; j++) {
+				if (testX.includes(winnerTemplate[i][j]))
+					console.log(winnerTemplate[i][j]);
+			}
+		}
 	};
 
 	return (

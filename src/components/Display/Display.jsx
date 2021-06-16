@@ -5,7 +5,9 @@ const Display = (props) => {
 	const { player, turn } = props;
 	return (
 		<div className="display">
-			<p>Joueur actuel : {player}</p>
+			<p>
+				Joueur actuel : <span className={`span_${player}`}>{player}</span>
+			</p>
 			<p>Tour : {turn}</p>
 		</div>
 	);

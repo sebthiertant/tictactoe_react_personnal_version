@@ -1,6 +1,6 @@
 .board {
-	height: 50vh;
-	width: 50vw;
+	height: 30rem;
+	width: 50rem;
 	margin: 10rem auto;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
