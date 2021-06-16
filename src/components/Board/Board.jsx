@@ -1,6 +1,7 @@
 import React from "react";
 import Cell from "../Cell/Cell";
 import "./Board.css";
+
 const Board = (props) => {
 	const { gridArray, onClick } = props;
 

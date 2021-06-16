@@ -12,8 +12,12 @@
 	width: 100%;
 }
 .X {
-	background-color: aliceblue;
+	font-size: 3rem;
+	color: rgb(66, 64, 64);
+	background-color: rgba(66, 64, 64, 0.267);
 }
 .O {
-	background-color: antiquewhite;
+	color: rgba(221, 45, 45, 0.712);
+	font-size: 3rem;
+	background-color: rgba(221, 45, 45, 0.219);
 }
